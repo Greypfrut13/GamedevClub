@@ -7,10 +7,7 @@ public class Item : MonoBehaviour
 {
     [SerializeField] private string _name;
 
-    private Sprite _icon;
+    [SerializeField] private Sprite _icon;
 
-    private void Start() 
-    {
-        _icon = GetComponent<SpriteRenderer>().sprite;
-    }
+    public Sprite Icon => _icon;
 }
