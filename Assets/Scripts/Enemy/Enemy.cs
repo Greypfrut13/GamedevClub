@@ -9,6 +9,8 @@ public class Enemy : MonoBehaviour
     [SerializeField] [Min(0.0f)] protected float _distanceToAttack;
     [SerializeField] [Min(0.0f)] private float _delayBetwenAttack;
 
+    [SerializeField] private Item _item;
+
     private Transform _target;
     private Vector3 _startPosition;
 
@@ -18,7 +20,6 @@ public class Enemy : MonoBehaviour
     {
         _startPosition = gameObject.transform.position;
     }
-
 
     private void Update() 
     {
@@ -49,6 +50,11 @@ public class Enemy : MonoBehaviour
         {
             return;
         }
+    }
+
+    public void DropItem()
+    {
+        Instantiate(_item, transform.position, Quaternion.identity);
     }
 
     protected virtual void MoveToTarget()

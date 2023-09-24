@@ -1046,6 +1046,7 @@ MonoBehaviour:
   _damage: 3
   _distanceToAttack: 2
   _delayBetwenAttack: 1.5
+  _item: {fileID: 5535535911010398942, guid: 780f1e4f59130764fb6670d55a051aff, type: 3}
 --- !u!114 &4410642277701836387
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1060,6 +1061,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _maxHealth: 15
   _healthBar: {fileID: 4410642276627410612}
+  _enemy: {fileID: 4410642277701836384}
 --- !u!1 &4410642277708016435
 GameObject:
   m_ObjectHideFlags: 0
